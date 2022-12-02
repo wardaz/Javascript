@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <script>
+
+    //1- Write a function that takes your name and age as an input parameter and print it by using string concatenation.
+
+    function n() {
+    let name=prompt("Please enter your name")
+    return name;
+}
+console.log(n());
+
+// 2 - Write a function name ‘Double’ that takes an input parameter and multiply that parameter by 2 and store the result in a variable and call the function by passing an argument.
+
+function double(para) {
+    para*=2;
+    let v=para;
+    console.log("Double is = "+v);
+}
+double(8);
+
+// 3 - Write a function to print the square of a number by using function expression and that function can be used as variable value for other variables.
+let n1=prompt("Enter a num")
+const sq= function(){
+     numsq=Math.pow(n1,2);
+     return numsq;
+};
+console.log("The square root of number is=" + sq(n1));
+    
+
+// 4 - Write an arrow function as an expression to check the age of the baby . If the age of the baby is less than 18 print Baby else print adult.
+var verifyage=(age)=>{
+if (age<18) {
+    console.log("baby")
+}
+else
+console.log("Adult")
+}
+verifyage(20);
+verifyage(9);
+
+// 5 - Write an arrow function and print a sum of two numbers by passing a single parameter inside the arrow function.
+let a=2,b=3;
+var add=(sum)=>{
+    sum=a+b;
+    console.log(sum);
+}
+add();
+
+//6 - Write an object ‘cities’ and loop values of the object's properties by using for... in Loop and print them.
+console.log("For In loop");
+var cities={
+    city1:"Multan",
+    city2:"Lahore",
+    city3:"Karachi",
+    city4:"Quetta",
+    city5:"DG Khan",
+};
+for(many in cities){
+    console.log(cities[many]);
+}
+
+// 7 - Write a for...of loop to traverse the array and print the elements of an array with indices.
+console.log("For of loop");
+const fruits=["apple","banana","cheeries","oranges"];
+for (const iterator of fruits) {
+    console.log(iterator)
+}
+
+// 8 - Write an unnamed /anonymous function which calculates the area of a rectangle.
+console.log("anonymous function");
+var myfun=function(length,width){
+    let area=length*width;
+    console.log(area);
+}
+myfun(4,7);
+
+
+    </script>
+
+</body>
+</html>
